@@ -1,0 +1,99 @@
+<!-- Main Sidebar Container -->
+<aside class="main-sidebar sidebar-dark-primary elevation-4">
+  <!-- Brand Logo -->
+  <a href="/dashboard" class="brand-link">
+    <strong>NEXT</strong>
+    <img
+      src="/adminlte/dist/img/nespresso.png"
+      alt="AdminLTE Logo"
+      class="brand-image img-circle elevation-3"
+      style="opacity: 0.8"
+    />
+    <span class="brand-text font-weight-light">GAMERS</span>
+  </a>
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <!-- Sidebar Menu -->
+    <nav class="mt-2">
+      <ul
+        class="nav nav-pills nav-sidebar flex-column"
+        data-widget="treeview"
+        role="menu"
+        data-accordion="false"
+      >
+        <li class="nav-item">
+          <a href="/dashboard" class="nav-link <% if(url === 'dashboard') { %> <%= "active" %> <% } %>">
+            <i class="nav-icon fas fa-home"></i>
+            <p>Dashboard</p>
+          </a>
+        </li>
+
+        <li class="nav-header">MASTER <%= url %> </li>
+        <li class="nav-item">
+          <a
+            href="/category"
+            class="nav-link <% if(url === 'category') { %> <%= "active" %> <% } %>"
+          >
+            <i class="nav-icon fas fa-inbox"></i>
+            <p>Kategori</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="/nominal" class="nav-link <% if(url === 'nominal') { %> <%= "active" %> <% } %>">
+            <i class="nav-icon fas fa-money-check-alt"></i>
+            <p>Nominal</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="/voucher" class="nav-link <% if(url === 'voucher') { %> <%= "active" %> <% } %>">
+            <i class="nav-icon far fa-image"></i>
+            <p>Voucher</p>
+          </a>
+        </li>
+
+        <li class="nav-header">METODE PEMBAYARAN</li>
+        <li class="nav-item">
+          <a href="/bank" class="nav-link <% if(url === 'bank') { %> <%= "active" %> <% } %>">
+            <i class="nav-icon fas fa-credit-card"></i>
+            <p>Bank</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="/payment" class="nav-link <% if(url === 'payment') { %> <%= "active" %> <% } %>">
+            <i class="nav-icon fas fa-money-check-alt"></i>
+            <p>Jenis Pembayaran</p>
+          </a>
+        </li>
+
+        <li class="nav-header">TRANSAKSI</li>
+        <li class="nav-item">
+          <a href="/transaction" class="nav-link <% if(url === 'transaction') { %> <%= "active" %> <% } %>">
+            <i class="nav-icon fas fa-cart-plus"></i>
+            <p>Data Transaksi</p>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            <i class="nav-icon fas fa-arrow-circle-right"></i>
+            <p>
+              Logout
+              <i class="right fas fa-angle-left"></i>
+            </p>
+          </a>
+          <ul class="nav nav-treeview">
+            <li class="nav-item">
+              <a href="/logout" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Keluar Aplikasi</p>
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <!-- /.sidebar-menu -->
+  </div>
+  <!-- /.sidebar -->
+</aside>

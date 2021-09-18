@@ -1,0 +1,26 @@
+<table id="example2" class="table table-bordered table-hover">
+  <thead>
+    <tr>
+      <th>No</th>
+      <th>Nama</th>
+      <th>Email</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% for(let i = 0; i < listPlayer.length; i++) { %>
+    <tr>
+      <td><%= i + 1 %></td>
+      <td><%= listPlayer[i].name %></td>
+      <td><%= listPlayer[i].email %></td>
+      <td>
+        <% if(listPlayer[i].status === 'Y') { %>
+        <span class="badge badge-success"> Aktif </span>
+        <% } else { %>
+        <span class="badge badge-danger"> Tidak aktif </span>
+        <% } %>
+      </td>
+    </tr>
+    <% } %>
+  </tbody>
+</table>
